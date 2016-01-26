@@ -1,0 +1,32 @@
+{
+  "name": "site-status-snitcher",
+  "version": "1.0.0",
+  "description": "Inform you of the status code of the sites that you want",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hellopath@github.com/hellopath/site-status-snitcher.git"
+  },
+  "keywords": [
+    "statuscode",
+    "status",
+    "inform",
+    "email",
+    "site",
+    "snitcher"
+  ],
+  "author": "hellopath <contact@pa-th.com> (http://pa-th.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellopath/site-status-snitcher/issues"
+  },
+  "homepage": "https://github.com/hellopath/site-status-snitcher#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "nodemailer": "^2.0.0",
+    "request": "^2.67.0"
+  }
+}
