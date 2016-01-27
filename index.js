@@ -3,8 +3,7 @@ var colors = require('colors')
 var nodemailer = require('nodemailer');
 
 module.exports = function(props) {
-	var timeoutInMilliseconds = 10*1000
-	var opts = []
+	var timeoutInMilliseconds = props.timeout || 10*1000
 	for (var i = 0; i < props.sites.length; i++) {
 		var url = props.sites[i]
 		var opt = {
@@ -39,7 +38,7 @@ module.exports = function(props) {
 
 		// setup e-mail data with unicode symbols 
 		var mailOptions = {
-			from: 'Bot 👥 ' + vars.from, // sender address 
+			from: vars.from, // sender address 
 			to: vars.to.join(), // list of receivers 
 			subject: vars.subject, // Subject line 
 			text: txtA + ' ' + txtB, // plaintext body 
@@ -49,9 +48,9 @@ module.exports = function(props) {
 		// send mail with defined transport object 
 		transporter.sendMail(mailOptions, function(error, info){
 			if(error){
-				return console.log(error);
+				return console.log(colors.red(error))
 			}
-			console.log('Message sent: ' + info.response);
+			console.log(colors.green('Message sent: ' + info.response))
 		});
 	}
 

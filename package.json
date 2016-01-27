@@ -1,7 +1,7 @@
 {
   "name": "site-status-snitcher",
-  "version": "1.0.0",
-  "description": "Inform you of the status code of the sites that you want",
+  "version": "1.0.1",
+  "description": "Checks the status of a list of sites and inform you by email if there is a connection problem with any",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
