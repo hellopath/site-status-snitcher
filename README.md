@@ -1,4 +1,4 @@
-# Site Status Snitcher 🚨
+# Site Status Snitcher
 
 Checks the status of a list of sites and inform you by email if there is a connection problem with any.
 
